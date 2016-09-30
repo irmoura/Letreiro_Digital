@@ -6,12 +6,18 @@
 package CODIGOS;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import javax.swing.Timer;
 
 /**
  *
  * @author irmoura
  */
 public class Tela extends javax.swing.JFrame {
+    
+    public Timer timer;
+    
+    public int contador;
 
     /**
      * Creates new form Tela
@@ -48,158 +54,54 @@ public class Tela extends javax.swing.JFrame {
                         int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5,
                         int a6, int b6, int c6, int d6, int e6, int f6, int g6, int h6){
         ////////////////////////////////////////////////////////////////////////
-        if(a1==1){
-            BTN_A1.setBackground(Color.red);
-        }
-        if(a2==1){
-            BTN_A2.setBackground(Color.red);
-        }
-        if(a3==1){
-            BTN_A3.setBackground(Color.red);
-        }
-        if(a4==1){
-            BTN_A4.setBackground(Color.red);
-        }
-        if(a5==1){
-            BTN_A5.setBackground(Color.red);
-        }
-        if(a6==1){
-            BTN_A6.setBackground(Color.red);
-        }
-        ////////////////////////////////////////
-         if(b1==1){
-            BTN_B1.setBackground(Color.red);
-        }
-        if(b2==1){
-            BTN_B2.setBackground(Color.red);
-        }
-        if(b3==1){
-            BTN_B3.setBackground(Color.red);
-        }
-        if(b4==1){
-            BTN_B4.setBackground(Color.red);
-        }
-        if(b5==1){
-            BTN_B5.setBackground(Color.red);
-        }
-        if(b6==1){
-            BTN_B6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-         if(c1==1){
-            BTN_C1.setBackground(Color.red);
-        }
-        if(c2==1){
-            BTN_C2.setBackground(Color.red);
-        }
-        if(c3==1){
-            BTN_C3.setBackground(Color.red);
-        }
-        if(c4==1){
-            BTN_C4.setBackground(Color.red);
-        }
-        if(c5==1){
-            BTN_C5.setBackground(Color.red);
-        }
-        if(c6==1){
-            BTN_C6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-          if(d1==1){
-            BTN_D1.setBackground(Color.red);
-        }
-        if(d2==1){
-            BTN_D2.setBackground(Color.red);
-        }
-        if(d3==1){
-            BTN_D3.setBackground(Color.red);
-        }
-        if(d4==1){
-            BTN_D4.setBackground(Color.red);
-        }
-        if(d5==1){
-            BTN_D5.setBackground(Color.red);
-        }
-        if(d6==1){
-            BTN_D6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-           if(e1==1){
-            BTN_E1.setBackground(Color.red);
-        }
-        if(e2==1){
-            BTN_E2.setBackground(Color.red);
-        }
-        if(e3==1){
-            BTN_E3.setBackground(Color.red);
-        }
-        if(e4==1){
-            BTN_E4.setBackground(Color.red);
-        }
-        if(e5==1){
-            BTN_E5.setBackground(Color.red);
-        }
-        if(e6==1){
-            BTN_E6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-            if(f1==1){
-            BTN_F1.setBackground(Color.red);
-        }
-        if(f2==1){
-            BTN_F2.setBackground(Color.red);
-        }
-        if(f3==1){
-            BTN_F3.setBackground(Color.red);
-        }
-        if(f4==1){
-            BTN_F4.setBackground(Color.red);
-        }
-        if(f5==1){
-            BTN_F5.setBackground(Color.red);
-        }
-        if(f6==1){
-            BTN_F6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-             if(g1==1){
-            BTN_G1.setBackground(Color.red);
-        }
-        if(g2==1){
-            BTN_G2.setBackground(Color.red);
-        }
-        if(g3==1){
-            BTN_G3.setBackground(Color.red);
-        }
-        if(g4==1){
-            BTN_G4.setBackground(Color.red);
-        }
-        if(g5==1){
-            BTN_G5.setBackground(Color.red);
-        }
-        if(g6==1){
-            BTN_G6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
-              if(h1==1){
-            BTN_H1.setBackground(Color.red);
-        }
-        if(h2==1){
-            BTN_H2.setBackground(Color.red);
-        }
-        if(h3==1){
-            BTN_H3.setBackground(Color.red);
-        }
-        if(h4==1){
-            BTN_H4.setBackground(Color.red);
-        }
-        if(h5==1){
-            BTN_H5.setBackground(Color.red);
-        }
-        if(h6==1){
-            BTN_H6.setBackground(Color.red);
-        }
-        ////////////////////////////////////
+        if(a1==1){BTN_A1.setBackground(Color.red);}
+        if(a2==1){BTN_A2.setBackground(Color.red);}
+        if(a3==1){BTN_A3.setBackground(Color.red);}
+        if(a4==1){BTN_A4.setBackground(Color.red);}
+        if(a5==1){BTN_A5.setBackground(Color.red);}
+        if(a6==1){BTN_A6.setBackground(Color.red);}
+        if(b1==1){BTN_B1.setBackground(Color.red);}
+        if(b2==1){BTN_B2.setBackground(Color.red);}
+        if(b3==1){BTN_B3.setBackground(Color.red);}
+        if(b4==1){BTN_B4.setBackground(Color.red);}
+        if(b5==1){BTN_B5.setBackground(Color.red);}
+        if(b6==1){BTN_B6.setBackground(Color.red);}
+        if(c1==1){BTN_C1.setBackground(Color.red);}
+        if(c2==1){BTN_C2.setBackground(Color.red);}
+        if(c3==1){BTN_C3.setBackground(Color.red);}
+        if(c4==1){BTN_C4.setBackground(Color.red);}
+        if(c5==1){BTN_C5.setBackground(Color.red);}
+        if(c6==1){BTN_C6.setBackground(Color.red);}
+        if(d1==1){BTN_D1.setBackground(Color.red);}
+        if(d2==1){BTN_D2.setBackground(Color.red);}
+        if(d3==1){BTN_D3.setBackground(Color.red);}
+        if(d4==1){BTN_D4.setBackground(Color.red);}
+        if(d5==1){BTN_D5.setBackground(Color.red);}
+        if(d6==1){BTN_D6.setBackground(Color.red);}
+        if(e1==1){BTN_E1.setBackground(Color.red);}
+        if(e2==1){BTN_E2.setBackground(Color.red);}
+        if(e3==1){BTN_E3.setBackground(Color.red);}
+        if(e4==1){BTN_E4.setBackground(Color.red);}
+        if(e5==1){BTN_E5.setBackground(Color.red);}
+        if(e6==1){BTN_E6.setBackground(Color.red);}
+        if(f1==1){BTN_F1.setBackground(Color.red);}
+        if(f2==1){BTN_F2.setBackground(Color.red);}
+        if(f3==1){BTN_F3.setBackground(Color.red);}
+        if(f4==1){BTN_F4.setBackground(Color.red);}
+        if(f5==1){BTN_F5.setBackground(Color.red);}
+        if(f6==1){BTN_F6.setBackground(Color.red);}
+        if(g1==1){BTN_G1.setBackground(Color.red);}
+        if(g2==1){BTN_G2.setBackground(Color.red);}
+        if(g3==1){BTN_G3.setBackground(Color.red);}
+        if(g4==1){BTN_G4.setBackground(Color.red);}
+        if(g5==1){BTN_G5.setBackground(Color.red);}
+        if(g6==1){BTN_G6.setBackground(Color.red);}
+        if(h1==1){BTN_H1.setBackground(Color.red);}
+        if(h2==1){BTN_H2.setBackground(Color.red);}
+        if(h3==1){BTN_H3.setBackground(Color.red);}
+        if(h4==1){BTN_H4.setBackground(Color.red);}
+        if(h5==1){BTN_H5.setBackground(Color.red);}
+        if(h6==1){BTN_H6.setBackground(Color.red);}
     }
     
     public void apaga(){
@@ -299,6 +201,161 @@ public class Tela extends javax.swing.JFrame {
         
             BTN_H6.setBackground(Color.LIGHT_GRAY);
 
+    }
+    
+    public void letra(String letra){
+        if(letra.equals("0")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("1")){
+            desenha(0, 1, 0, 0, 0, 0, 0, 0,
+                    1, 1, 0, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("2")){
+            desenha(0, 1, 0, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("3")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("4")){
+            desenha(1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("5")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("6")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("7")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0, 0, 0);
+        }
+         if(letra.equals("8")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+          if(letra.equals("9")){
+            desenha(1, 1, 1, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("A")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("B")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("C")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("D")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("E")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("F")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0);
+        }
+        if(letra.equals("G")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("L")){
+            desenha(1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0);
+        }
+        if(letra.equals("R")){
+            desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 0, 0, 0, 0, 0, 0, 0,
+                    1, 1, 1, 1, 0, 0, 0, 0,
+                    1, 1, 0, 0, 0, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0, 0, 0,
+                    1, 0, 0, 1, 0, 0, 0, 0);
+        }
     }
 
     /**
@@ -529,13 +586,76 @@ public class Tela extends javax.swing.JFrame {
 //                0, 0, 0, 0, 0, 0, 0, 0,
 //                0, 0, 0, 0, 0, 0, 0, 0,
 //                0, 0, 0, 0, 0, 0, 0, 0);
+
+        timer = new Timer(500, (ActionEvent e) -> {
+            
+            contador++;
+            
+            if(contador==1){
+                letra("0");
+            }
+            if(contador==2){
+                apaga();
+            }
+            if(contador==3){
+                letra("1");
+            }
+            if(contador==4){
+                apaga();
+            }
+            if(contador==5){
+                letra("2");
+            }
+            if(contador==6){
+                apaga();
+            }
+            if(contador==7){
+                letra("3");
+            }
+            if(contador==8){
+                apaga();
+            }
+            if(contador==9){
+                letra("4");
+            }
+            if(contador==10){
+                apaga();
+            }
+            if(contador==11){
+                letra("5");
+            }
+            if(contador==12){
+                apaga();
+            }
+            if(contador==13){
+                letra("6");
+            }
+            if(contador==14){
+                apaga();
+            }
+            if(contador==15){
+                letra("7");
+            }
+            if(contador==16){
+                apaga();
+            }
+            if(contador==17){
+                letra("8");
+            }
+            if(contador==18){
+                apaga();
+            }
+            if(contador==19){
+                letra("9");
+            }
+            if(contador==20){
+                apaga();
+                contador=0;
+            }
         
-        desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                1, 0, 0, 1, 0, 0, 0, 0,
-                1, 1, 1, 1, 0, 0, 0, 0,
-                1, 1, 0, 0, 0, 0, 0, 0,
-                1, 0, 1, 0, 0, 0, 0, 0,
-                1, 0, 0, 1, 0, 0, 0, 0);
+         });
+        
+        timer.start();
         
     }//GEN-LAST:event_formWindowOpened
 
