@@ -18,6 +18,10 @@ public class Tela extends javax.swing.JFrame {
     public Timer timer;
     
     public int contador;
+    
+    public Color btn_ativado = Color.yellow;
+    public Color btn_desativado = Color.black;
+    public int delay = 250;
 
     /**
      * Creates new form Tela
@@ -54,152 +58,152 @@ public class Tela extends javax.swing.JFrame {
                         int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5,
                         int a6, int b6, int c6, int d6, int e6, int f6, int g6, int h6){
         ////////////////////////////////////////////////////////////////////////
-        if(a1==1){BTN_A1.setBackground(Color.red);}
-        if(a2==1){BTN_A2.setBackground(Color.red);}
-        if(a3==1){BTN_A3.setBackground(Color.red);}
-        if(a4==1){BTN_A4.setBackground(Color.red);}
-        if(a5==1){BTN_A5.setBackground(Color.red);}
-        if(a6==1){BTN_A6.setBackground(Color.red);}
-        if(b1==1){BTN_B1.setBackground(Color.red);}
-        if(b2==1){BTN_B2.setBackground(Color.red);}
-        if(b3==1){BTN_B3.setBackground(Color.red);}
-        if(b4==1){BTN_B4.setBackground(Color.red);}
-        if(b5==1){BTN_B5.setBackground(Color.red);}
-        if(b6==1){BTN_B6.setBackground(Color.red);}
-        if(c1==1){BTN_C1.setBackground(Color.red);}
-        if(c2==1){BTN_C2.setBackground(Color.red);}
-        if(c3==1){BTN_C3.setBackground(Color.red);}
-        if(c4==1){BTN_C4.setBackground(Color.red);}
-        if(c5==1){BTN_C5.setBackground(Color.red);}
-        if(c6==1){BTN_C6.setBackground(Color.red);}
-        if(d1==1){BTN_D1.setBackground(Color.red);}
-        if(d2==1){BTN_D2.setBackground(Color.red);}
-        if(d3==1){BTN_D3.setBackground(Color.red);}
-        if(d4==1){BTN_D4.setBackground(Color.red);}
-        if(d5==1){BTN_D5.setBackground(Color.red);}
-        if(d6==1){BTN_D6.setBackground(Color.red);}
-        if(e1==1){BTN_E1.setBackground(Color.red);}
-        if(e2==1){BTN_E2.setBackground(Color.red);}
-        if(e3==1){BTN_E3.setBackground(Color.red);}
-        if(e4==1){BTN_E4.setBackground(Color.red);}
-        if(e5==1){BTN_E5.setBackground(Color.red);}
-        if(e6==1){BTN_E6.setBackground(Color.red);}
-        if(f1==1){BTN_F1.setBackground(Color.red);}
-        if(f2==1){BTN_F2.setBackground(Color.red);}
-        if(f3==1){BTN_F3.setBackground(Color.red);}
-        if(f4==1){BTN_F4.setBackground(Color.red);}
-        if(f5==1){BTN_F5.setBackground(Color.red);}
-        if(f6==1){BTN_F6.setBackground(Color.red);}
-        if(g1==1){BTN_G1.setBackground(Color.red);}
-        if(g2==1){BTN_G2.setBackground(Color.red);}
-        if(g3==1){BTN_G3.setBackground(Color.red);}
-        if(g4==1){BTN_G4.setBackground(Color.red);}
-        if(g5==1){BTN_G5.setBackground(Color.red);}
-        if(g6==1){BTN_G6.setBackground(Color.red);}
-        if(h1==1){BTN_H1.setBackground(Color.red);}
-        if(h2==1){BTN_H2.setBackground(Color.red);}
-        if(h3==1){BTN_H3.setBackground(Color.red);}
-        if(h4==1){BTN_H4.setBackground(Color.red);}
-        if(h5==1){BTN_H5.setBackground(Color.red);}
-        if(h6==1){BTN_H6.setBackground(Color.red);}
+        if(a1==1){BTN_A1.setBackground(btn_ativado);}
+        if(a2==1){BTN_A2.setBackground(btn_ativado);}
+        if(a3==1){BTN_A3.setBackground(btn_ativado);}
+        if(a4==1){BTN_A4.setBackground(btn_ativado);}
+        if(a5==1){BTN_A5.setBackground(btn_ativado);}
+        if(a6==1){BTN_A6.setBackground(btn_ativado);}
+        if(b1==1){BTN_B1.setBackground(btn_ativado);}
+        if(b2==1){BTN_B2.setBackground(btn_ativado);}
+        if(b3==1){BTN_B3.setBackground(btn_ativado);}
+        if(b4==1){BTN_B4.setBackground(btn_ativado);}
+        if(b5==1){BTN_B5.setBackground(btn_ativado);}
+        if(b6==1){BTN_B6.setBackground(btn_ativado);}
+        if(c1==1){BTN_C1.setBackground(btn_ativado);}
+        if(c2==1){BTN_C2.setBackground(btn_ativado);}
+        if(c3==1){BTN_C3.setBackground(btn_ativado);}
+        if(c4==1){BTN_C4.setBackground(btn_ativado);}
+        if(c5==1){BTN_C5.setBackground(btn_ativado);}
+        if(c6==1){BTN_C6.setBackground(btn_ativado);}
+        if(d1==1){BTN_D1.setBackground(btn_ativado);}
+        if(d2==1){BTN_D2.setBackground(btn_ativado);}
+        if(d3==1){BTN_D3.setBackground(btn_ativado);}
+        if(d4==1){BTN_D4.setBackground(btn_ativado);}
+        if(d5==1){BTN_D5.setBackground(btn_ativado);}
+        if(d6==1){BTN_D6.setBackground(btn_ativado);}
+        if(e1==1){BTN_E1.setBackground(btn_ativado);}
+        if(e2==1){BTN_E2.setBackground(btn_ativado);}
+        if(e3==1){BTN_E3.setBackground(btn_ativado);}
+        if(e4==1){BTN_E4.setBackground(btn_ativado);}
+        if(e5==1){BTN_E5.setBackground(btn_ativado);}
+        if(e6==1){BTN_E6.setBackground(btn_ativado);}
+        if(f1==1){BTN_F1.setBackground(btn_ativado);}
+        if(f2==1){BTN_F2.setBackground(btn_ativado);}
+        if(f3==1){BTN_F3.setBackground(btn_ativado);}
+        if(f4==1){BTN_F4.setBackground(btn_ativado);}
+        if(f5==1){BTN_F5.setBackground(btn_ativado);}
+        if(f6==1){BTN_F6.setBackground(btn_ativado);}
+        if(g1==1){BTN_G1.setBackground(btn_ativado);}
+        if(g2==1){BTN_G2.setBackground(btn_ativado);}
+        if(g3==1){BTN_G3.setBackground(btn_ativado);}
+        if(g4==1){BTN_G4.setBackground(btn_ativado);}
+        if(g5==1){BTN_G5.setBackground(btn_ativado);}
+        if(g6==1){BTN_G6.setBackground(btn_ativado);}
+        if(h1==1){BTN_H1.setBackground(btn_ativado);}
+        if(h2==1){BTN_H2.setBackground(btn_ativado);}
+        if(h3==1){BTN_H3.setBackground(btn_ativado);}
+        if(h4==1){BTN_H4.setBackground(btn_ativado);}
+        if(h5==1){BTN_H5.setBackground(btn_ativado);}
+        if(h6==1){BTN_H6.setBackground(btn_ativado);}
     }
     
     public void apaga(){
-            BTN_A1.setBackground(Color.LIGHT_GRAY);
+            BTN_A1.setBackground(btn_desativado);
         
-            BTN_A2.setBackground(Color.LIGHT_GRAY);
+            BTN_A2.setBackground(btn_desativado);
        
-            BTN_A3.setBackground(Color.LIGHT_GRAY);
+            BTN_A3.setBackground(btn_desativado);
        
-            BTN_A4.setBackground(Color.LIGHT_GRAY);
+            BTN_A4.setBackground(btn_desativado);
        
-            BTN_A5.setBackground(Color.LIGHT_GRAY);
+            BTN_A5.setBackground(btn_desativado);
        
-            BTN_A6.setBackground(Color.LIGHT_GRAY);
+            BTN_A6.setBackground(btn_desativado);
        
-            BTN_B1.setBackground(Color.LIGHT_GRAY);
+            BTN_B1.setBackground(btn_desativado);
        
-            BTN_B2.setBackground(Color.LIGHT_GRAY);
+            BTN_B2.setBackground(btn_desativado);
        
-            BTN_B3.setBackground(Color.LIGHT_GRAY);
+            BTN_B3.setBackground(btn_desativado);
        
-            BTN_B4.setBackground(Color.LIGHT_GRAY);
+            BTN_B4.setBackground(btn_desativado);
         
-            BTN_B5.setBackground(Color.LIGHT_GRAY);
+            BTN_B5.setBackground(btn_desativado);
         
-            BTN_B6.setBackground(Color.LIGHT_GRAY);
+            BTN_B6.setBackground(btn_desativado);
        
-            BTN_C1.setBackground(Color.LIGHT_GRAY);
+            BTN_C1.setBackground(btn_desativado);
        
-            BTN_C2.setBackground(Color.LIGHT_GRAY);
+            BTN_C2.setBackground(btn_desativado);
        
-            BTN_C3.setBackground(Color.LIGHT_GRAY);
+            BTN_C3.setBackground(btn_desativado);
         
-            BTN_C4.setBackground(Color.LIGHT_GRAY);
+            BTN_C4.setBackground(btn_desativado);
        
-            BTN_C5.setBackground(Color.LIGHT_GRAY);
+            BTN_C5.setBackground(btn_desativado);
        
-            BTN_C6.setBackground(Color.LIGHT_GRAY);
+            BTN_C6.setBackground(btn_desativado);
         
-            BTN_D1.setBackground(Color.LIGHT_GRAY);
+            BTN_D1.setBackground(btn_desativado);
         
-            BTN_D2.setBackground(Color.LIGHT_GRAY);
+            BTN_D2.setBackground(btn_desativado);
        
-            BTN_D3.setBackground(Color.LIGHT_GRAY);
+            BTN_D3.setBackground(btn_desativado);
        
-            BTN_D4.setBackground(Color.LIGHT_GRAY);
+            BTN_D4.setBackground(btn_desativado);
         
-            BTN_D5.setBackground(Color.LIGHT_GRAY);
+            BTN_D5.setBackground(btn_desativado);
        
-            BTN_D6.setBackground(Color.LIGHT_GRAY);
+            BTN_D6.setBackground(btn_desativado);
         
-            BTN_E1.setBackground(Color.LIGHT_GRAY);
+            BTN_E1.setBackground(btn_desativado);
        
-            BTN_E2.setBackground(Color.LIGHT_GRAY);
+            BTN_E2.setBackground(btn_desativado);
         
-            BTN_E3.setBackground(Color.LIGHT_GRAY);
+            BTN_E3.setBackground(btn_desativado);
        
-            BTN_E4.setBackground(Color.LIGHT_GRAY);
+            BTN_E4.setBackground(btn_desativado);
         
-            BTN_E5.setBackground(Color.LIGHT_GRAY);
+            BTN_E5.setBackground(btn_desativado);
         
-            BTN_E6.setBackground(Color.LIGHT_GRAY);
+            BTN_E6.setBackground(btn_desativado);
         
-            BTN_F1.setBackground(Color.LIGHT_GRAY);
+            BTN_F1.setBackground(btn_desativado);
        
-            BTN_F2.setBackground(Color.LIGHT_GRAY);
+            BTN_F2.setBackground(btn_desativado);
         
-            BTN_F3.setBackground(Color.LIGHT_GRAY);
+            BTN_F3.setBackground(btn_desativado);
        
-            BTN_F4.setBackground(Color.LIGHT_GRAY);
+            BTN_F4.setBackground(btn_desativado);
        
-            BTN_F5.setBackground(Color.LIGHT_GRAY);
+            BTN_F5.setBackground(btn_desativado);
         
-            BTN_F6.setBackground(Color.LIGHT_GRAY);
+            BTN_F6.setBackground(btn_desativado);
         
-            BTN_G1.setBackground(Color.LIGHT_GRAY);
+            BTN_G1.setBackground(btn_desativado);
        
-            BTN_G2.setBackground(Color.LIGHT_GRAY);
+            BTN_G2.setBackground(btn_desativado);
        
-            BTN_G3.setBackground(Color.LIGHT_GRAY);
+            BTN_G3.setBackground(btn_desativado);
         
-            BTN_G4.setBackground(Color.LIGHT_GRAY);
+            BTN_G4.setBackground(btn_desativado);
         
-            BTN_G5.setBackground(Color.LIGHT_GRAY);
+            BTN_G5.setBackground(btn_desativado);
         
-            BTN_G6.setBackground(Color.LIGHT_GRAY);
+            BTN_G6.setBackground(btn_desativado);
         
-            BTN_H1.setBackground(Color.LIGHT_GRAY);
+            BTN_H1.setBackground(btn_desativado);
        
-            BTN_H2.setBackground(Color.LIGHT_GRAY);
+            BTN_H2.setBackground(btn_desativado);
         
-            BTN_H3.setBackground(Color.LIGHT_GRAY);
+            BTN_H3.setBackground(btn_desativado);
         
-            BTN_H4.setBackground(Color.LIGHT_GRAY);
+            BTN_H4.setBackground(btn_desativado);
        
-            BTN_H5.setBackground(Color.LIGHT_GRAY);
+            BTN_H5.setBackground(btn_desativado);
         
-            BTN_H6.setBackground(Color.LIGHT_GRAY);
+            BTN_H6.setBackground(btn_desativado);
 
     }
     
@@ -587,7 +591,7 @@ public class Tela extends javax.swing.JFrame {
 //                0, 0, 0, 0, 0, 0, 0, 0,
 //                0, 0, 0, 0, 0, 0, 0, 0);
 
-        timer = new Timer(500, (ActionEvent e) -> {
+        timer = new Timer(delay, (ActionEvent e) -> {
             
             contador++;
             
@@ -656,6 +660,8 @@ public class Tela extends javax.swing.JFrame {
          });
         
         timer.start();
+        
+        
         
     }//GEN-LAST:event_formWindowOpened
 
