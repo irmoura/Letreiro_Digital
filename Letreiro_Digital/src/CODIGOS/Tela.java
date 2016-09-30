@@ -29,6 +29,16 @@ public class Tela extends javax.swing.JFrame {
     int f1, int f2, int f3, int f4, int f5, int f6,
     int g1, int g2, int g3, int g4, int g5, int g6,
     int h1, int h2, int h3, int h4, int h5, int h6
+    
+    //////////////////////////////////////////////
+    
+    int a1, int b1, int c1, int d1, int e1, int f1, int g1, int h1,
+    int a2, int b2, int c2, int d2, int e2, int f2, int g2, int h2,
+    int a3, int b3, int c3, int d3, int e3, int f3, int g3, int h3,
+    int a4, int b4, int c4, int d4, int e4, int f4, int g4, int h4,
+    int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5,
+    int a6, int b6, int c6, int d6, int e6, int f6, int g6, int h6
+    
     */
     
     public void desenha(int a1, int b1, int c1, int d1, int e1, int f1, int g1, int h1,
@@ -511,7 +521,22 @@ public class Tela extends javax.swing.JFrame {
         
         //desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
-        desenha(/*A*/1, 1, 1, 1, 1, 1,/*AB*/ 1, 0, 1, 1, 0, 0,/*BC*/ 1, 0, 1, 0, 1, 0/*CD*/, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        //desenha(/*A*/1, 1, 1, 1, 1, 1,/*AB*/ 1, 0, 1, 1, 0, 0,/*BC*/ 1, 0, 1, 0, 1, 0/*CD*/, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        
+//        desenha(0, 0, 0, 0, 0, 0, 0, 0,
+//                0, 0, 0, 0, 0, 0, 0, 0,
+//                0, 0, 0, 0, 0, 0, 0, 0,
+//                0, 0, 0, 0, 0, 0, 0, 0,
+//                0, 0, 0, 0, 0, 0, 0, 0,
+//                0, 0, 0, 0, 0, 0, 0, 0);
+        
+        desenha(1, 1, 1, 1, 0, 0, 0, 0,
+                1, 0, 0, 1, 0, 0, 0, 0,
+                1, 1, 1, 1, 0, 0, 0, 0,
+                1, 1, 0, 0, 0, 0, 0, 0,
+                1, 0, 1, 0, 0, 0, 0, 0,
+                1, 0, 0, 1, 0, 0, 0, 0);
+        
     }//GEN-LAST:event_formWindowOpened
 
     /**
