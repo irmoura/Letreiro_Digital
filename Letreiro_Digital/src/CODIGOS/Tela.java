@@ -7,6 +7,7 @@ package CODIGOS;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.util.Random;
 import javax.swing.Timer;
 
 /**
@@ -19,9 +20,9 @@ public class Tela extends javax.swing.JFrame {
     
     public int contador;
     
-    public Color btn_ativado = Color.yellow;
+    public Color btn_ativado = Color.red;
     public Color btn_desativado = Color.black;
-    public int delay = 250;
+    public int delay = 50;
 
     /**
      * Creates new form Tela
@@ -288,78 +289,7 @@ public class Tela extends javax.swing.JFrame {
                     1, 1, 1, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0);
         }
-        if(letra.equals("A")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("B")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("C")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("D")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("E")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("F")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0);
-        }
-        if(letra.equals("G")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("L")){
-            desenha(1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0);
-        }
-        if(letra.equals("R")){
-            desenha(1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 1, 0, 0, 0, 0,
-                    1, 1, 0, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 0, 0, 1, 0, 0, 0, 0);
-        }
+        
     }
 
     /**
@@ -580,81 +510,91 @@ public class Tela extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         
-        //desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-
-        //desenha(/*A*/1, 1, 1, 1, 1, 1,/*AB*/ 1, 0, 1, 1, 0, 0,/*BC*/ 1, 0, 1, 0, 1, 0/*CD*/, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        
-//        desenha(0, 0, 0, 0, 0, 0, 0, 0,
-//                0, 0, 0, 0, 0, 0, 0, 0,
-//                0, 0, 0, 0, 0, 0, 0, 0,
-//                0, 0, 0, 0, 0, 0, 0, 0,
-//                0, 0, 0, 0, 0, 0, 0, 0,
-//                0, 0, 0, 0, 0, 0, 0, 0);
-
         timer = new Timer(delay, (ActionEvent e) -> {
+            
+            Random random = new Random();
+            
+//            int[] t = {random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2)};
+            
+            int[] t = {1,
+                       1,
+                       1,
+                       1,
+                       1,
+                       1};
             
             contador++;
             
             if(contador==1){
-                letra("0");
-            }
-            if(contador==2){
-                apaga();
+            apaga();
+            desenha(0, 0, 0, 0, 0, 0, 0, t[0],
+                    0, 0, 0, 0, 0, 0, 0, t[1],
+                    0, 0, 0, 0, 0, 0, 0, t[2],
+                    0, 0, 0, 0, 0, 0, 0, t[3],
+                    0, 0, 0, 0, 0, 0, 0, t[4],
+                    0, 0, 0, 0, 0, 0, 0, t[5]);
             }
             if(contador==3){
-                letra("1");
-            }
-            if(contador==4){
-                apaga();
+            desenha(0, 0, 0, 0, 0, 0, t[0], 0,
+                    0, 0, 0, 0, 0, 0, t[1], 0,
+                    0, 0, 0, 0, 0, 0, t[2], 0,
+                    0, 0, 0, 0, 0, 0, t[3], 0,
+                    0, 0, 0, 0, 0, 0, t[4], 0,
+                    0, 0, 0, 0, 0, 0, t[5], 0);
             }
             if(contador==5){
-                letra("2");
-            }
-            if(contador==6){
-                apaga();
+            desenha(0, 0, 0, 0, 0, t[0], 0, 0,
+                    0, 0, 0, 0, 0, t[1], 0, 0,
+                    0, 0, 0, 0, 0, t[2], 0, 0,
+                    0, 0, 0, 0, 0, t[3], 0, 0,
+                    0, 0, 0, 0, 0, t[4], 0, 0,
+                    0, 0, 0, 0, 0, t[5], 0, 0);
             }
             if(contador==7){
-                letra("3");
-            }
-            if(contador==8){
-                apaga();
+            desenha(0, 0, 0, 0, t[0], 0, 0, 0,
+                    0, 0, 0, 0, t[1], 0, 0, 0,
+                    0, 0, 0, 0, t[2], 0, 0, 0,
+                    0, 0, 0, 0, t[3], 0, 0, 0,
+                    0, 0, 0, 0, t[4], 0, 0, 0,
+                    0, 0, 0, 0, t[5], 0, 0, 0);
             }
             if(contador==9){
-                letra("4");
-            }
-            if(contador==10){
-                apaga();
+            desenha(0, 0, 0, t[0], 0, 0, 0, 0,
+                    0, 0, 0, t[1], 0, 0, 0, 0,
+                    0, 0, 0, t[2], 0, 0, 0, 0,
+                    0, 0, 0, t[3], 0, 0, 0, 0,
+                    0, 0, 0, t[4], 0, 0, 0, 0,
+                    0, 0, 0, t[5], 0, 0, 0, 0);
             }
             if(contador==11){
-                letra("5");
-            }
-            if(contador==12){
-                apaga();
+            desenha(0, 0, t[0], 0, 0, 0, 0, 0,
+                    0, 0, t[1], 0, 0, 0, 0, 0,
+                    0, 0, t[2], 0, 0, 0, 0, 0,
+                    0, 0, t[3], 0, 0, 0, 0, 0,
+                    0, 0, t[4], 0, 0, 0, 0, 0,
+                    0, 0, t[5], 0, 0, 0, 0, 0);
             }
             if(contador==13){
-                letra("6");
-            }
-            if(contador==14){
-                apaga();
+            desenha(0, t[0], 0, 0, 0, 0, 0, 0,
+                    0, t[1], 0, 0, 0, 0, 0, 0,
+                    0, t[2], 0, 0, 0, 0, 0, 0,
+                    0, t[3], 0, 0, 0, 0, 0, 0,
+                    0, t[4], 0, 0, 0, 0, 0, 0,
+                    0, t[5], 0, 0, 0, 0, 0, 0);
             }
             if(contador==15){
-                letra("7");
+            desenha(t[0], 0, 0, 0, 0, 0, 0, 0,
+                    t[1], 0, 0, 0, 0, 0, 0, 0,
+                    t[2], 0, 0, 0, 0, 0, 0, 0,
+                    t[3], 0, 0, 0, 0, 0, 0, 0,
+                    t[4], 0, 0, 0, 0, 0, 0, 0,
+                    t[5], 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==16){
-                apaga();
+            contador = 0;
             }
-            if(contador==17){
-                letra("8");
-            }
-            if(contador==18){
-                apaga();
-            }
-            if(contador==19){
-                letra("9");
-            }
-            if(contador==20){
-                apaga();
-                contador=0;
+            if(contador%2 == 0){
+            apaga();
             }
         
          });
