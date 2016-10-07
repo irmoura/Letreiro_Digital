@@ -803,11 +803,11 @@ public class Tela extends javax.swing.JFrame {
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0);
             }
             if(contador==9){
-            desenha(0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0);
             }
             if(contador==11){
             desenha(0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
