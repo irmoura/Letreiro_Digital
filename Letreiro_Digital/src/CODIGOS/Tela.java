@@ -20,9 +20,13 @@ public class Tela extends javax.swing.JFrame {
     
     public int contador;
     
-    public Color btn_ativado = Color.red;
+    public Color btn_ativado = Color.yellow;
     public Color btn_desativado = Color.black;
-    public int delay = 50;
+    public int delay = 250;
+    
+    public int[] coluna_001_da_frase = new int[5];
+    public int[] coluna_002_da_frase = new int[5];
+    public int[] coluna_003_da_frase = new int[5];
 
     /**
      * Creates new form Tela
@@ -31,265 +35,288 @@ public class Tela extends javax.swing.JFrame {
         initComponents();
     }
     
-    /*
-    int a1, int a2, int a3, int a4, int a5, int a6,
-    int b1, int b2, int b3, int b4, int b5, int b6,
-    int c1, int c2, int c3, int c4, int c5, int c6,
-    int d1, int d2, int d3, int d4, int d5, int d6,
-    int e1, int e2, int e3, int e4, int e5, int e6,
-    int f1, int f2, int f3, int f4, int f5, int f6,
-    int g1, int g2, int g3, int g4, int g5, int g6,
-    int h1, int h2, int h3, int h4, int h5, int h6
-    
-    //////////////////////////////////////////////
-    
-    int a1, int b1, int c1, int d1, int e1, int f1, int g1, int h1,
-    int a2, int b2, int c2, int d2, int e2, int f2, int g2, int h2,
-    int a3, int b3, int c3, int d3, int e3, int f3, int g3, int h3,
-    int a4, int b4, int c4, int d4, int e4, int f4, int g4, int h4,
-    int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5,
-    int a6, int b6, int c6, int d6, int e6, int f6, int g6, int h6
-    
-    */
-    
     public void desenha(int a1, int b1, int c1, int d1, int e1, int f1, int g1, int h1,
                         int a2, int b2, int c2, int d2, int e2, int f2, int g2, int h2,
                         int a3, int b3, int c3, int d3, int e3, int f3, int g3, int h3,
                         int a4, int b4, int c4, int d4, int e4, int f4, int g4, int h4,
-                        int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5,
-                        int a6, int b6, int c6, int d6, int e6, int f6, int g6, int h6){
+                        int a5, int b5, int c5, int d5, int e5, int f5, int g5, int h5){
         ////////////////////////////////////////////////////////////////////////
         if(a1==1){BTN_A1.setBackground(btn_ativado);}
         if(a2==1){BTN_A2.setBackground(btn_ativado);}
         if(a3==1){BTN_A3.setBackground(btn_ativado);}
         if(a4==1){BTN_A4.setBackground(btn_ativado);}
         if(a5==1){BTN_A5.setBackground(btn_ativado);}
-        if(a6==1){BTN_A6.setBackground(btn_ativado);}
         if(b1==1){BTN_B1.setBackground(btn_ativado);}
         if(b2==1){BTN_B2.setBackground(btn_ativado);}
         if(b3==1){BTN_B3.setBackground(btn_ativado);}
         if(b4==1){BTN_B4.setBackground(btn_ativado);}
         if(b5==1){BTN_B5.setBackground(btn_ativado);}
-        if(b6==1){BTN_B6.setBackground(btn_ativado);}
         if(c1==1){BTN_C1.setBackground(btn_ativado);}
         if(c2==1){BTN_C2.setBackground(btn_ativado);}
         if(c3==1){BTN_C3.setBackground(btn_ativado);}
         if(c4==1){BTN_C4.setBackground(btn_ativado);}
         if(c5==1){BTN_C5.setBackground(btn_ativado);}
-        if(c6==1){BTN_C6.setBackground(btn_ativado);}
         if(d1==1){BTN_D1.setBackground(btn_ativado);}
         if(d2==1){BTN_D2.setBackground(btn_ativado);}
         if(d3==1){BTN_D3.setBackground(btn_ativado);}
         if(d4==1){BTN_D4.setBackground(btn_ativado);}
         if(d5==1){BTN_D5.setBackground(btn_ativado);}
-        if(d6==1){BTN_D6.setBackground(btn_ativado);}
         if(e1==1){BTN_E1.setBackground(btn_ativado);}
         if(e2==1){BTN_E2.setBackground(btn_ativado);}
         if(e3==1){BTN_E3.setBackground(btn_ativado);}
         if(e4==1){BTN_E4.setBackground(btn_ativado);}
         if(e5==1){BTN_E5.setBackground(btn_ativado);}
-        if(e6==1){BTN_E6.setBackground(btn_ativado);}
         if(f1==1){BTN_F1.setBackground(btn_ativado);}
         if(f2==1){BTN_F2.setBackground(btn_ativado);}
         if(f3==1){BTN_F3.setBackground(btn_ativado);}
         if(f4==1){BTN_F4.setBackground(btn_ativado);}
         if(f5==1){BTN_F5.setBackground(btn_ativado);}
-        if(f6==1){BTN_F6.setBackground(btn_ativado);}
         if(g1==1){BTN_G1.setBackground(btn_ativado);}
         if(g2==1){BTN_G2.setBackground(btn_ativado);}
         if(g3==1){BTN_G3.setBackground(btn_ativado);}
         if(g4==1){BTN_G4.setBackground(btn_ativado);}
         if(g5==1){BTN_G5.setBackground(btn_ativado);}
-        if(g6==1){BTN_G6.setBackground(btn_ativado);}
         if(h1==1){BTN_H1.setBackground(btn_ativado);}
         if(h2==1){BTN_H2.setBackground(btn_ativado);}
         if(h3==1){BTN_H3.setBackground(btn_ativado);}
         if(h4==1){BTN_H4.setBackground(btn_ativado);}
         if(h5==1){BTN_H5.setBackground(btn_ativado);}
-        if(h6==1){BTN_H6.setBackground(btn_ativado);}
     }
     
     public void apaga(){
             BTN_A1.setBackground(btn_desativado);
-        
             BTN_A2.setBackground(btn_desativado);
-       
             BTN_A3.setBackground(btn_desativado);
-       
             BTN_A4.setBackground(btn_desativado);
-       
             BTN_A5.setBackground(btn_desativado);
-       
-            BTN_A6.setBackground(btn_desativado);
-       
             BTN_B1.setBackground(btn_desativado);
-       
             BTN_B2.setBackground(btn_desativado);
-       
             BTN_B3.setBackground(btn_desativado);
-       
             BTN_B4.setBackground(btn_desativado);
-        
             BTN_B5.setBackground(btn_desativado);
-        
-            BTN_B6.setBackground(btn_desativado);
-       
             BTN_C1.setBackground(btn_desativado);
-       
             BTN_C2.setBackground(btn_desativado);
-       
             BTN_C3.setBackground(btn_desativado);
-        
             BTN_C4.setBackground(btn_desativado);
-       
             BTN_C5.setBackground(btn_desativado);
-       
-            BTN_C6.setBackground(btn_desativado);
-        
             BTN_D1.setBackground(btn_desativado);
-        
             BTN_D2.setBackground(btn_desativado);
-       
             BTN_D3.setBackground(btn_desativado);
-       
             BTN_D4.setBackground(btn_desativado);
-        
             BTN_D5.setBackground(btn_desativado);
-       
-            BTN_D6.setBackground(btn_desativado);
-        
             BTN_E1.setBackground(btn_desativado);
-       
             BTN_E2.setBackground(btn_desativado);
-        
             BTN_E3.setBackground(btn_desativado);
-       
-            BTN_E4.setBackground(btn_desativado);
-        
-            BTN_E5.setBackground(btn_desativado);
-        
-            BTN_E6.setBackground(btn_desativado);
-        
-            BTN_F1.setBackground(btn_desativado);
-       
-            BTN_F2.setBackground(btn_desativado);
-        
+            BTN_E4.setBackground(btn_desativado);  
+            BTN_E5.setBackground(btn_desativado);   
+            BTN_F1.setBackground(btn_desativado); 
+            BTN_F2.setBackground(btn_desativado);  
             BTN_F3.setBackground(btn_desativado);
-       
             BTN_F4.setBackground(btn_desativado);
-       
-            BTN_F5.setBackground(btn_desativado);
-        
-            BTN_F6.setBackground(btn_desativado);
-        
-            BTN_G1.setBackground(btn_desativado);
-       
-            BTN_G2.setBackground(btn_desativado);
-       
-            BTN_G3.setBackground(btn_desativado);
-        
+            BTN_F5.setBackground(btn_desativado);      
+            BTN_G1.setBackground(btn_desativado);    
+            BTN_G2.setBackground(btn_desativado);    
+            BTN_G3.setBackground(btn_desativado);      
             BTN_G4.setBackground(btn_desativado);
-        
             BTN_G5.setBackground(btn_desativado);
-        
-            BTN_G6.setBackground(btn_desativado);
-        
             BTN_H1.setBackground(btn_desativado);
-       
             BTN_H2.setBackground(btn_desativado);
-        
             BTN_H3.setBackground(btn_desativado);
-        
             BTN_H4.setBackground(btn_desativado);
-       
             BTN_H5.setBackground(btn_desativado);
-        
-            BTN_H6.setBackground(btn_desativado);
-
     }
     
-    public void letra(String letra){
-        if(letra.equals("0")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+    public void numero_a_ser_exibido(String numero_exibido){
+        if(numero_exibido.equals("0")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 1;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 0;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("1")){
-            desenha(0, 1, 0, 0, 0, 0, 0, 0,
-                    1, 1, 0, 0, 0, 0, 0, 0,
-                    0, 1, 0, 0, 0, 0, 0, 0,
-                    0, 1, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("1")){
+             coluna_001_da_frase[0] = 0;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 0;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 1;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 1;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 0;
+             coluna_003_da_frase[1] = 0;
+             coluna_003_da_frase[2] = 0;
+             coluna_003_da_frase[3] = 0;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("2")){
-            desenha(0, 1, 0, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    0, 1, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("2")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 0;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 1;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 0;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("3")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("3")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 0;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("4")){
-            desenha(1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("4")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 0;
+             //////////////////////////
+             coluna_002_da_frase[0] = 0;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 0;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("5")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("5")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 0;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("6")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 0, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("6")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 1;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 0;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        if(letra.equals("7")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    0, 1, 0, 0, 0, 0, 0, 0,
-                    0, 1, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("7")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 0;
+             coluna_001_da_frase[2] = 0;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 0;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 0;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 0;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-         if(letra.equals("8")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("8")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 1;
+             coluna_001_da_frase[4] = 1;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 1;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-          if(letra.equals("9")){
-            desenha(1, 1, 1, 0, 0, 0, 0, 0,
-                    1, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 1, 0, 0, 0, 0, 0,
-                    1, 1, 1, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0);
+        if(numero_exibido.equals("9")){
+             coluna_001_da_frase[0] = 1;
+             coluna_001_da_frase[1] = 1;
+             coluna_001_da_frase[2] = 1;
+             coluna_001_da_frase[3] = 0;
+             coluna_001_da_frase[4] = 0;
+             //////////////////////////
+             coluna_002_da_frase[0] = 1;
+             coluna_002_da_frase[1] = 0;
+             coluna_002_da_frase[2] = 1;
+             coluna_002_da_frase[3] = 0;
+             coluna_002_da_frase[4] = 0;
+             //////////////////////////
+             coluna_003_da_frase[0] = 1;
+             coluna_003_da_frase[1] = 1;
+             coluna_003_da_frase[2] = 1;
+             coluna_003_da_frase[3] = 1;
+             coluna_003_da_frase[4] = 1;
         }
-        
     }
 
     /**
@@ -341,14 +368,6 @@ public class Tela extends javax.swing.JFrame {
         BTN_F5 = new javax.swing.JButton();
         BTN_G5 = new javax.swing.JButton();
         BTN_H5 = new javax.swing.JButton();
-        BTN_A6 = new javax.swing.JButton();
-        BTN_B6 = new javax.swing.JButton();
-        BTN_C6 = new javax.swing.JButton();
-        BTN_D6 = new javax.swing.JButton();
-        BTN_E6 = new javax.swing.JButton();
-        BTN_F6 = new javax.swing.JButton();
-        BTN_G6 = new javax.swing.JButton();
-        BTN_H6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -479,119 +498,97 @@ public class Tela extends javax.swing.JFrame {
         BTN_H5.setPreferredSize(new java.awt.Dimension(23, 23));
         getContentPane().add(BTN_H5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
 
-        BTN_A6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_A6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
-
-        BTN_B6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_B6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
-
-        BTN_C6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_C6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        BTN_D6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_D6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
-
-        BTN_E6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
-
-        BTN_F6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_F6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
-
-        BTN_G6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_G6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
-
-        BTN_H6.setPreferredSize(new java.awt.Dimension(23, 23));
-        getContentPane().add(BTN_H6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, -1, -1));
-
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         
+        numero_a_ser_exibido("0");
+        
         timer = new Timer(delay, (ActionEvent e) -> {
-            
-            Random random = new Random();
-            
-//            int[] t = {random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2),random.nextInt(2)};
-            
-            int[] t = {1,
-                       1,
-                       1,
-                       1,
-                       1,
-                       1};
+
+        Random random = new Random();
             
             contador++;
             
             if(contador==1){
             apaga();
-            desenha(0, 0, 0, 0, 0, 0, 0, t[0],
-                    0, 0, 0, 0, 0, 0, 0, t[1],
-                    0, 0, 0, 0, 0, 0, 0, t[2],
-                    0, 0, 0, 0, 0, 0, 0, t[3],
-                    0, 0, 0, 0, 0, 0, 0, t[4],
-                    0, 0, 0, 0, 0, 0, 0, t[5]);
+            desenha(0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0],
+                    0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1],
+                    0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2],
+                    0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3],
+                    0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4]);
             }
             if(contador==3){
-            desenha(0, 0, 0, 0, 0, 0, t[0], 0,
-                    0, 0, 0, 0, 0, 0, t[1], 0,
-                    0, 0, 0, 0, 0, 0, t[2], 0,
-                    0, 0, 0, 0, 0, 0, t[3], 0,
-                    0, 0, 0, 0, 0, 0, t[4], 0,
-                    0, 0, 0, 0, 0, 0, t[5], 0);
+            desenha(0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0],
+                    0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1],
+                    0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2],
+                    0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3],
+                    0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4]);
             }
             if(contador==5){
-            desenha(0, 0, 0, 0, 0, t[0], 0, 0,
-                    0, 0, 0, 0, 0, t[1], 0, 0,
-                    0, 0, 0, 0, 0, t[2], 0, 0,
-                    0, 0, 0, 0, 0, t[3], 0, 0,
-                    0, 0, 0, 0, 0, t[4], 0, 0,
-                    0, 0, 0, 0, 0, t[5], 0, 0);
+            desenha(0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0],
+                    0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1],
+                    0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2],
+                    0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3],
+                    0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4]);
             }
             if(contador==7){
-            desenha(0, 0, 0, 0, t[0], 0, 0, 0,
-                    0, 0, 0, 0, t[1], 0, 0, 0,
-                    0, 0, 0, 0, t[2], 0, 0, 0,
-                    0, 0, 0, 0, t[3], 0, 0, 0,
-                    0, 0, 0, 0, t[4], 0, 0, 0,
-                    0, 0, 0, 0, t[5], 0, 0, 0);
+            desenha(0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0,
+                    0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0,
+                    0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0,
+                    0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0,
+                    0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0);
             }
             if(contador==9){
-            desenha(0, 0, 0, t[0], 0, 0, 0, 0,
-                    0, 0, 0, t[1], 0, 0, 0, 0,
-                    0, 0, 0, t[2], 0, 0, 0, 0,
-                    0, 0, 0, t[3], 0, 0, 0, 0,
-                    0, 0, 0, t[4], 0, 0, 0, 0,
-                    0, 0, 0, t[5], 0, 0, 0, 0);
+            desenha(0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0,
+                    0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0,
+                    0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0,
+                    0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0,
+                    0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0);
             }
             if(contador==11){
-            desenha(0, 0, t[0], 0, 0, 0, 0, 0,
-                    0, 0, t[1], 0, 0, 0, 0, 0,
-                    0, 0, t[2], 0, 0, 0, 0, 0,
-                    0, 0, t[3], 0, 0, 0, 0, 0,
-                    0, 0, t[4], 0, 0, 0, 0, 0,
-                    0, 0, t[5], 0, 0, 0, 0, 0);
+            desenha(0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0,
+                    0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0,
+                    0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0,
+                    0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0,
+                    0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0);
             }
             if(contador==13){
-            desenha(0, t[0], 0, 0, 0, 0, 0, 0,
-                    0, t[1], 0, 0, 0, 0, 0, 0,
-                    0, t[2], 0, 0, 0, 0, 0, 0,
-                    0, t[3], 0, 0, 0, 0, 0, 0,
-                    0, t[4], 0, 0, 0, 0, 0, 0,
-                    0, t[5], 0, 0, 0, 0, 0, 0);
+            desenha(0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0,
+                    0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0,
+                    0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0,
+                    0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0,
+                    0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0);
             }
             if(contador==15){
-            desenha(t[0], 0, 0, 0, 0, 0, 0, 0,
-                    t[1], 0, 0, 0, 0, 0, 0, 0,
-                    t[2], 0, 0, 0, 0, 0, 0, 0,
-                    t[3], 0, 0, 0, 0, 0, 0, 0,
-                    t[4], 0, 0, 0, 0, 0, 0, 0,
-                    t[5], 0, 0, 0, 0, 0, 0, 0);
+            desenha(coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0,
+                    coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0,
+                    coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0,
+                    coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0,
+                    coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0);
             }
-            if(contador==16){
+            if(contador==17){
+            desenha(coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0,
+                    coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0,
+                    coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0,
+                    coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0,
+                    coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==19){
+            desenha(coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0,
+                    coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0,
+                    coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0,
+                    coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0,
+                    coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==20){
             contador = 0;
+            
+            numero_a_ser_exibido(""+random.nextInt(10));
+            
             }
             if(contador%2 == 0){
             apaga();
@@ -646,48 +643,40 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JButton BTN_A3;
     private javax.swing.JButton BTN_A4;
     private javax.swing.JButton BTN_A5;
-    private javax.swing.JButton BTN_A6;
     private javax.swing.JButton BTN_B1;
     private javax.swing.JButton BTN_B2;
     private javax.swing.JButton BTN_B3;
     private javax.swing.JButton BTN_B4;
     private javax.swing.JButton BTN_B5;
-    private javax.swing.JButton BTN_B6;
     private javax.swing.JButton BTN_C1;
     private javax.swing.JButton BTN_C2;
     private javax.swing.JButton BTN_C3;
     private javax.swing.JButton BTN_C4;
     private javax.swing.JButton BTN_C5;
-    private javax.swing.JButton BTN_C6;
     private javax.swing.JButton BTN_D1;
     private javax.swing.JButton BTN_D2;
     private javax.swing.JButton BTN_D3;
     private javax.swing.JButton BTN_D4;
     private javax.swing.JButton BTN_D5;
-    private javax.swing.JButton BTN_D6;
     private javax.swing.JButton BTN_E1;
     private javax.swing.JButton BTN_E2;
     private javax.swing.JButton BTN_E3;
     private javax.swing.JButton BTN_E4;
     private javax.swing.JButton BTN_E5;
-    private javax.swing.JButton BTN_E6;
     private javax.swing.JButton BTN_F1;
     private javax.swing.JButton BTN_F2;
     private javax.swing.JButton BTN_F3;
     private javax.swing.JButton BTN_F4;
     private javax.swing.JButton BTN_F5;
-    private javax.swing.JButton BTN_F6;
     private javax.swing.JButton BTN_G1;
     private javax.swing.JButton BTN_G2;
     private javax.swing.JButton BTN_G3;
     private javax.swing.JButton BTN_G4;
     private javax.swing.JButton BTN_G5;
-    private javax.swing.JButton BTN_G6;
     private javax.swing.JButton BTN_H1;
     private javax.swing.JButton BTN_H2;
     private javax.swing.JButton BTN_H3;
     private javax.swing.JButton BTN_H4;
     private javax.swing.JButton BTN_H5;
-    private javax.swing.JButton BTN_H6;
     // End of variables declaration//GEN-END:variables
 }
