@@ -22,7 +22,7 @@ public class Tela extends javax.swing.JFrame {
     
     public Color btn_ativado = Color.yellow;
     public Color btn_desativado = Color.black;
-    public int delay = 125;
+    public int delay = 500;
     
     public int[] coluna_001_da_frase = new int[5];
     public int[] coluna_002_da_frase = new int[5];
@@ -831,20 +831,76 @@ public class Tela extends javax.swing.JFrame {
                      0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0);
             }
             if(contador==17){
-            desenha( 0, 0, 0, 0, 0, 0, 0, 0,coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0);
             }
             if(contador==19){
-            desenha( 0, 0, 0, 0, 0, 0, 0, 0,coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0);
             }
-            if(contador==20){
+            if(contador==21){
+            desenha( 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==23){
+            desenha( 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==25){
+            desenha( 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==27){
+            desenha( 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==29){
+            desenha( 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==31){
+            desenha( coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==33){
+            desenha( coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==35){
+            desenha( coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            }
+            if(contador==36){
             contador = 0;
             
             numero_a_ser_exibido(""+random.nextInt(10));
