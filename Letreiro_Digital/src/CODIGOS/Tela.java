@@ -24,9 +24,9 @@ public class Tela extends javax.swing.JFrame {
     public Color btn_desativado = Color.black;
     public int delay = 500;
     
-    public int[] coluna_001_da_frase = new int[5];
-    public int[] coluna_002_da_frase = new int[5];
-    public int[] coluna_003_da_frase = new int[5];
+    public int[] C001DF = new int[5];
+    public int[] C002DF = new int[5];
+    public int[] C003DF = new int[5];
 
     /**
      * Creates new form Tela
@@ -124,11 +124,7 @@ public class Tela extends javax.swing.JFrame {
     }
     
     public void apaga(){
-            BTN_A1.setBackground(btn_desativado);
-            BTN_A2.setBackground(btn_desativado);
-            BTN_A3.setBackground(btn_desativado);
-            BTN_A4.setBackground(btn_desativado);
-            BTN_A5.setBackground(btn_desativado);
+            BTN_A1.setBackground(btn_desativado); BTN_A2.setBackground(btn_desativado); BTN_A3.setBackground(btn_desativado); BTN_A4.setBackground(btn_desativado); BTN_A5.setBackground(btn_desativado);
             BTN_B1.setBackground(btn_desativado);
             BTN_B2.setBackground(btn_desativado);
             BTN_B3.setBackground(btn_desativado);
@@ -208,195 +204,232 @@ public class Tela extends javax.swing.JFrame {
     
     public void numero_a_ser_exibido(String numero_exibido){
         if(numero_exibido.equals("0")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 1;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 1;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 0;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 0;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("1")){
-             coluna_001_da_frase[0] = 0;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 0;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 0;
+             C001DF[1] = 1;
+             C001DF[2] = 0;
+             C001DF[3] = 0;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 1;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 1;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 1;
+             C002DF[2] = 1;
+             C002DF[3] = 1;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 0;
-             coluna_003_da_frase[1] = 0;
-             coluna_003_da_frase[2] = 0;
-             coluna_003_da_frase[3] = 0;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 0;
+             C003DF[1] = 0;
+             C003DF[2] = 0;
+             C003DF[3] = 0;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("2")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 0;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 1;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 0;
+             C001DF[2] = 1;
+             C001DF[3] = 1;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 0;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 0;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("3")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 0;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 0;
+             C001DF[2] = 1;
+             C001DF[3] = 0;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("4")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 0;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 0;
+             C001DF[4] = 0;
              //////////////////////////
-             coluna_002_da_frase[0] = 0;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 0;
+             C002DF[0] = 0;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 0;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("5")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 0;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 0;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 0;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("6")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 1;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 1;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 0;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 0;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("7")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 0;
-             coluna_001_da_frase[2] = 0;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 0;
+             C001DF[0] = 1;
+             C001DF[1] = 0;
+             C001DF[2] = 0;
+             C001DF[3] = 0;
+             C001DF[4] = 0;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 0;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 0;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 0;
+             C002DF[3] = 0;
+             C002DF[4] = 0;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("8")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 1;
-             coluna_001_da_frase[4] = 1;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 1;
+             C001DF[4] = 1;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 1;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 1;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
         if(numero_exibido.equals("9")){
-             coluna_001_da_frase[0] = 1;
-             coluna_001_da_frase[1] = 1;
-             coluna_001_da_frase[2] = 1;
-             coluna_001_da_frase[3] = 0;
-             coluna_001_da_frase[4] = 0;
+             C001DF[0] = 1;
+             C001DF[1] = 1;
+             C001DF[2] = 1;
+             C001DF[3] = 0;
+             C001DF[4] = 0;
              //////////////////////////
-             coluna_002_da_frase[0] = 1;
-             coluna_002_da_frase[1] = 0;
-             coluna_002_da_frase[2] = 1;
-             coluna_002_da_frase[3] = 0;
-             coluna_002_da_frase[4] = 0;
+             C002DF[0] = 1;
+             C002DF[1] = 0;
+             C002DF[2] = 1;
+             C002DF[3] = 0;
+             C002DF[4] = 0;
              //////////////////////////
-             coluna_003_da_frase[0] = 1;
-             coluna_003_da_frase[1] = 1;
-             coluna_003_da_frase[2] = 1;
-             coluna_003_da_frase[3] = 1;
-             coluna_003_da_frase[4] = 1;
+             C003DF[0] = 1;
+             C003DF[1] = 1;
+             C003DF[2] = 1;
+             C003DF[3] = 1;
+             C003DF[4] = 1;
         }
+    }
+    
+    public void position(int posicao){
+        
+     int[] a = new int[5];int[] b = new int[5];int[] c = new int[5];int[] d = new int[5];
+     int[] e = new int[5];int[] f = new int[5];int[] g = new int[5];int[] h = new int[5];
+     int[] i = new int[5];int[] j = new int[5];int[] k = new int[5];int[] l = new int[5];
+     int[] m = new int[5];int[] n = new int[5];int[] o = new int[5];int[] p = new int[5];
+        
+        if(posicao==1){
+            p[0] = C001DF[0]; p[1] = C001DF[1]; p[2] = C001DF[2]; p[3] = C001DF[3]; p[4] = C001DF[4];
+        }
+        if(posicao==2){
+            o[0] = C001DF[0]; o[1] = C001DF[1]; o[2] = C001DF[2]; o[3] = C001DF[3]; o[4] = C001DF[4];
+            p[0] = C002DF[0]; p[1] = C002DF[1]; p[2] = C002DF[2]; p[3] = C002DF[3]; p[4] = C002DF[4];
+        }
+        if(posicao==3){
+            n[0] = C001DF[0]; n[1] = C001DF[1]; n[2] = C001DF[2]; n[3] = C001DF[3]; n[4] = C001DF[4];
+            o[0] = C002DF[0]; o[1] = C002DF[1]; o[2] = C002DF[2]; o[3] = C002DF[3]; o[4] = C002DF[4];
+            p[0] = C003DF[0]; p[1] = C003DF[1]; p[2] = C003DF[2]; p[3] = C003DF[3]; p[4] = C003DF[4];
+        }
+        if(posicao==4){
+            m[0] = C001DF[0]; m[1] = C001DF[1]; m[2] = C001DF[2]; m[3] = C001DF[3]; m[4] = C001DF[4];
+            n[0] = C002DF[0]; n[1] = C002DF[1]; n[2] = C002DF[2]; n[3] = C002DF[3]; n[4] = C002DF[4];
+            o[0] = C003DF[0]; o[1] = C003DF[1]; o[2] = C003DF[2]; o[3] = C003DF[3]; o[4] = C003DF[4];
+        }
+         if(posicao==5){
+            l[0] = C001DF[0]; l[1] = C001DF[1]; l[2] = C001DF[2]; l[3] = C001DF[3]; l[4] = C001DF[4];
+            m[0] = C002DF[0]; m[1] = C002DF[1]; m[2] = C002DF[2]; m[3] = C002DF[3]; m[4] = C002DF[4];
+            n[0] = C003DF[0]; n[1] = C003DF[1]; n[2] = C003DF[2]; n[3] = C003DF[3]; n[4] = C003DF[4];
+        }
+        
+        desenha(a[0], b[0], c[0], d[0], e[0], f[0], g[0], h[0], i[0], j[0], k[0], l[0], m[0], n[0], o[0], p[0],
+                a[1], b[1], c[1], d[1], e[1], f[1], g[1], h[1], i[1], j[1], k[1], l[1], m[1], n[1], o[1], p[1],
+                a[2], b[2], c[2], d[2], e[2], f[2], g[2], h[2], i[2], j[2], k[2], l[2], m[2], n[2], o[2], p[2],
+                a[3], b[3], c[3], d[3], e[3], f[3], g[3], h[3], i[3], j[3], k[3], l[3], m[3], n[3], o[3], p[3],
+                a[4], b[4], c[4], d[4], e[4], f[4], g[4], h[4], i[4], j[4], k[4], l[4], m[4], n[4], o[4], p[4]);
     }
 
     /**
@@ -775,130 +808,120 @@ public class Tela extends javax.swing.JFrame {
             
             if(contador==1){
             apaga();
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4]);
+            
+            position(1);
+            
             }
             if(contador==3){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4]);
+                
+            position(2);
+                
             }
             if(contador==5){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3],
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4]);
+                
+            position(3);
+                
             }
             if(contador==7){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0);
+            
+            position(4);
+                
             }
             if(contador==9){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0);
+            
+            position(5);
+                
             }
             if(contador==11){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0);
+            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0);
             }
             if(contador==13){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0);
+            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0);
             }
             if(contador==15){
-            desenha( 0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, 0, 0, 0,C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0);
             }
             if(contador==17){
-            desenha( 0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0);
             }
             if(contador==19){
-            desenha( 0, 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==21){
-            desenha( 0, 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==23){
-            desenha( 0, 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==25){
-            desenha( 0, 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==27){
-            desenha( 0, 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==29){
-            desenha( 0, coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==31){
-            desenha( coluna_001_da_frase[0], coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_001_da_frase[1], coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_001_da_frase[2], coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_001_da_frase[3], coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_001_da_frase[4], coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==33){
-            desenha( coluna_002_da_frase[0], coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_002_da_frase[1], coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_002_da_frase[2], coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_002_da_frase[3], coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_002_da_frase[4], coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==35){
-            desenha( coluna_003_da_frase[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_003_da_frase[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_003_da_frase[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_003_da_frase[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     coluna_003_da_frase[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+            desenha( C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
             }
             if(contador==36){
             contador = 0;
