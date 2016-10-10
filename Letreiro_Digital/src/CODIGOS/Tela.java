@@ -19,6 +19,7 @@ public class Tela extends javax.swing.JFrame {
     public Timer timer;
     
     public int contador;
+    public int contador_position;
     
     public Color btn_ativado = Color.yellow;
     public Color btn_desativado = Color.black;
@@ -31,8 +32,8 @@ public class Tela extends javax.swing.JFrame {
     /**
      * Creates new form Tela
      */
-    public Tela() {
-        initComponents();
+    public Tela(){
+        initComponents();  
     }
     
     public void desenha(int a1, int b1, int c1, int d1, int e1, int f1, int g1, int h1, int i1, int j1, int k1, int l1, int m1, int n1, int o1, int p1,
@@ -419,10 +420,72 @@ public class Tela extends javax.swing.JFrame {
             n[0] = C002DF[0]; n[1] = C002DF[1]; n[2] = C002DF[2]; n[3] = C002DF[3]; n[4] = C002DF[4];
             o[0] = C003DF[0]; o[1] = C003DF[1]; o[2] = C003DF[2]; o[3] = C003DF[3]; o[4] = C003DF[4];
         }
-         if(posicao==5){
+        if(posicao==5){
             l[0] = C001DF[0]; l[1] = C001DF[1]; l[2] = C001DF[2]; l[3] = C001DF[3]; l[4] = C001DF[4];
             m[0] = C002DF[0]; m[1] = C002DF[1]; m[2] = C002DF[2]; m[3] = C002DF[3]; m[4] = C002DF[4];
             n[0] = C003DF[0]; n[1] = C003DF[1]; n[2] = C003DF[2]; n[3] = C003DF[3]; n[4] = C003DF[4];
+        }
+        if(posicao==6){
+            k[0] = C001DF[0]; k[1] = C001DF[1]; k[2] = C001DF[2]; k[3] = C001DF[3]; k[4] = C001DF[4];
+            l[0] = C002DF[0]; l[1] = C002DF[1]; l[2] = C002DF[2]; l[3] = C002DF[3]; l[4] = C002DF[4];
+            m[0] = C003DF[0]; m[1] = C003DF[1]; m[2] = C003DF[2]; m[3] = C003DF[3]; m[4] = C003DF[4];
+        }
+        if(posicao==7){
+            j[0] = C001DF[0]; j[1] = C001DF[1]; j[2] = C001DF[2]; j[3] = C001DF[3]; j[4] = C001DF[4];
+            k[0] = C002DF[0]; k[1] = C002DF[1]; k[2] = C002DF[2]; k[3] = C002DF[3]; k[4] = C002DF[4];
+            l[0] = C003DF[0]; l[1] = C003DF[1]; l[2] = C003DF[2]; l[3] = C003DF[3]; l[4] = C003DF[4];
+        }
+        if(posicao==8){
+            i[0] = C001DF[0]; i[1] = C001DF[1]; i[2] = C001DF[2]; i[3] = C001DF[3]; i[4] = C001DF[4];
+            j[0] = C002DF[0]; j[1] = C002DF[1]; j[2] = C002DF[2]; j[3] = C002DF[3]; j[4] = C002DF[4];
+            k[0] = C003DF[0]; k[1] = C003DF[1]; k[2] = C003DF[2]; k[3] = C003DF[3]; k[4] = C003DF[4];
+        }
+        if(posicao==9){
+            h[0] = C001DF[0]; h[1] = C001DF[1]; h[2] = C001DF[2]; h[3] = C001DF[3]; h[4] = C001DF[4];
+            i[0] = C002DF[0]; i[1] = C002DF[1]; i[2] = C002DF[2]; i[3] = C002DF[3]; i[4] = C002DF[4];
+            j[0] = C003DF[0]; j[1] = C003DF[1]; j[2] = C003DF[2]; j[3] = C003DF[3]; j[4] = C003DF[4];
+        }
+        if(posicao==10){
+            g[0] = C001DF[0]; g[1] = C001DF[1]; g[2] = C001DF[2]; g[3] = C001DF[3]; g[4] = C001DF[4];
+            h[0] = C002DF[0]; h[1] = C002DF[1]; h[2] = C002DF[2]; h[3] = C002DF[3]; h[4] = C002DF[4];
+            i[0] = C003DF[0]; i[1] = C003DF[1]; i[2] = C003DF[2]; i[3] = C003DF[3]; i[4] = C003DF[4];
+        }
+        if(posicao==11){
+            f[0] = C001DF[0]; f[1] = C001DF[1]; f[2] = C001DF[2]; f[3] = C001DF[3]; f[4] = C001DF[4];
+            g[0] = C002DF[0]; g[1] = C002DF[1]; g[2] = C002DF[2]; g[3] = C002DF[3]; g[4] = C002DF[4];
+            h[0] = C003DF[0]; h[1] = C003DF[1]; h[2] = C003DF[2]; h[3] = C003DF[3]; h[4] = C003DF[4];
+        }
+        if(posicao==12){
+            e[0] = C001DF[0]; e[1] = C001DF[1]; e[2] = C001DF[2]; e[3] = C001DF[3]; e[4] = C001DF[4];
+            f[0] = C002DF[0]; f[1] = C002DF[1]; f[2] = C002DF[2]; f[3] = C002DF[3]; f[4] = C002DF[4];
+            g[0] = C003DF[0]; g[1] = C003DF[1]; g[2] = C003DF[2]; g[3] = C003DF[3]; g[4] = C003DF[4];
+        }
+        if(posicao==13){
+            d[0] = C001DF[0]; d[1] = C001DF[1]; d[2] = C001DF[2]; d[3] = C001DF[3]; d[4] = C001DF[4];
+            e[0] = C002DF[0]; e[1] = C002DF[1]; e[2] = C002DF[2]; e[3] = C002DF[3]; e[4] = C002DF[4];
+            f[0] = C003DF[0]; f[1] = C003DF[1]; f[2] = C003DF[2]; f[3] = C003DF[3]; f[4] = C003DF[4];
+        }
+        if(posicao==14){
+            c[0] = C001DF[0]; c[1] = C001DF[1]; c[2] = C001DF[2]; c[3] = C001DF[3]; c[4] = C001DF[4];
+            d[0] = C002DF[0]; d[1] = C002DF[1]; d[2] = C002DF[2]; d[3] = C002DF[3]; d[4] = C002DF[4];
+            e[0] = C003DF[0]; e[1] = C003DF[1]; e[2] = C003DF[2]; e[3] = C003DF[3]; e[4] = C003DF[4];
+        }
+        if(posicao==15){
+            b[0] = C001DF[0]; b[1] = C001DF[1]; b[2] = C001DF[2]; b[3] = C001DF[3]; b[4] = C001DF[4];
+            c[0] = C002DF[0]; c[1] = C002DF[1]; c[2] = C002DF[2]; c[3] = C002DF[3]; c[4] = C002DF[4];
+            d[0] = C003DF[0]; d[1] = C003DF[1]; d[2] = C003DF[2]; d[3] = C003DF[3]; d[4] = C003DF[4];
+        }
+        if(posicao==16){
+            a[0] = C001DF[0]; a[1] = C001DF[1]; a[2] = C001DF[2]; a[3] = C001DF[3]; a[4] = C001DF[4];
+            b[0] = C002DF[0]; b[1] = C002DF[1]; b[2] = C002DF[2]; b[3] = C002DF[3]; b[4] = C002DF[4];
+            c[0] = C003DF[0]; c[1] = C003DF[1]; c[2] = C003DF[2]; c[3] = C003DF[3]; c[4] = C003DF[4];
+        }
+        if(posicao==17){
+            a[0] = C002DF[0]; a[1] = C002DF[1]; a[2] = C002DF[2]; a[3] = C002DF[3]; a[4] = C002DF[4];
+            b[0] = C003DF[0]; b[1] = C003DF[1]; b[2] = C003DF[2]; b[3] = C003DF[3]; b[4] = C003DF[4];
+        }
+         if(posicao==18){
+            a[0] = C003DF[0]; a[1] = C003DF[1]; a[2] = C003DF[2]; a[3] = C003DF[3]; a[4] = C003DF[4];
         }
         
         desenha(a[0], b[0], c[0], d[0], e[0], f[0], g[0], h[0], i[0], j[0], k[0], l[0], m[0], n[0], o[0], p[0],
@@ -799,145 +862,29 @@ public class Tela extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         numero_a_ser_exibido("0");
-        
         timer = new Timer(delay, (ActionEvent e) -> {
-
-        Random random = new Random();
-            
-            contador++;
-            
+        Random random = new Random();    
+            contador++;  
             if(contador==1){
-            apaga();
-            
-            position(1);
-            
-            }
-            if(contador==3){
-                
-            position(2);
-                
-            }
-            if(contador==5){
-                
-            position(3);
-                
-            }
-            if(contador==7){
-            
-            position(4);
-                
-            }
-            if(contador==9){
-            
-            position(5);
-                
-            }
-            if(contador==11){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0);
-            }
-            if(contador==13){
-            desenha(0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0);
-            }
-            if(contador==15){
-            desenha( 0, 0, 0, 0, 0, 0, 0, 0,C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, 0,C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0);
-            }
-            if(contador==17){
-            desenha( 0, 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==19){
-            desenha( 0, 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==21){
-            desenha( 0, 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==23){
-            desenha( 0, 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==25){
-            desenha( 0, 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==27){
-            desenha( 0, 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, 0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==29){
-            desenha( 0, C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     0, C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==31){
-            desenha( C001DF[0], C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C001DF[1], C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C001DF[2], C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C001DF[3], C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C001DF[4], C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==33){
-            desenha( C002DF[0], C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C002DF[1], C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C002DF[2], C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C002DF[3], C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C002DF[4], C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==35){
-            desenha( C003DF[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C003DF[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C003DF[2], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C003DF[3], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                     C003DF[4], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            }
-            if(contador==36){
-            contador = 0;
-            
-            numero_a_ser_exibido(""+random.nextInt(10));
-            
-            }
+            apaga(); 
+            contador_position++; 
+            position(contador_position);
+            }else
             if(contador%2 == 0){
             apaga();
+            }else{
+            apaga();
+            contador_position++;
+            position(contador_position);
             }
-        
+            if(contador==36){    
+            contador = 0;
+            contador_position = 0;
+            numero_a_ser_exibido(""+random.nextInt(10));
+            }
          });
         
         timer.start();
-        
-        
         
     }//GEN-LAST:event_formWindowOpened
 
@@ -971,7 +918,7 @@ public class Tela extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tela().setVisible(true);
+                    new Tela().setVisible(true);             
             }
         });
     }
